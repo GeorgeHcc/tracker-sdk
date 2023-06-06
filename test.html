@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test js/ts</title>
+  </head>
+  <body>
+
+    
+
+    <script src="./dist/index.esm.js" type="module"></script>
+    <script type="module">
+      import {  Tracker} from "./dist/index.esm.js";
+      const buf=new Uint8Array([1,-2,3,5])
+      // const arr=JSON.parse(buf)
+      console.log(buf);
+  
+      const a = new Tracker({
+        historyTracker: true,
+        requestUrl:'http://localhost:5500/tracker'
+      });
+
+    //   history.pushState("ass", "", "/aa");
+
+    </script>
+  </body>
+</html>
